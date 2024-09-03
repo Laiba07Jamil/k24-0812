@@ -1,0 +1,70 @@
+
+Q)Find the maximum number in any of three variables.
+
+1)Start 
+2)//Input three variables
+3)Input num1
+4)Input num2
+5)Input num3
+4)If num1>num2 and num1>num3,then
+5)print "num1 is max"
+6)Else if,num2>num1and num2>num3,then
+7)print "num2 is max"
+8)Else if,num3>num1 and num3>num2,then
+9)print" "num3 is max"
+10)Else,
+11)print "some numbers are equal"
+12)end if
+13)End
+
+Q)Create a small calculator which only does'+' or '-' operations.(Hint:Take three variables inputs withone being used for the operator)
+
+1)Start
+2)//Input three variables
+3)Input a
+4)Input b
+3)Input c
+4)//variables and initialization
+5)SET b=+
+6)//Process steps
+7)SET sum=a (b) c
+8)//variables and initialization
+9)SET b=-
+10)//Process step
+11)SET difference=a (b) c
+10)//Conditional statements
+11)If b=+,then
+12)Print "sum"
+13)else if,b=-,then
+14)Print"difference"
+15)else,print"the operator is invalid"
+16)end if
+17)End
+
+Q)Take three variables as input and add them without using the (+) operator.
+
+1)start
+2)//Input three variables
+3)Input A
+4)Input B
+4)Input c
+5)//Process steps
+6)SET sum=A-(-B)-(-C)
+7)Print "sum"
+8)End
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

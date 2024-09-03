@@ -1,0 +1,104 @@
+  
+Q)Implement an algorithm for determining if an Nth is a divisor of an n number (i.e.2 is a divisor of 6).If so,determine if it's an ever number or odd number as well.
+
+1)Start
+2)Ask the user to enter n number
+3)Read number
+4)Ask the user to set Nth=1
+5)If number mod Nth=0,then
+6)Display "Nth is a divisor"
+7)Ask the user to set Nth=Nth+1
+8)Repeat 3 untill Number>Nth
+7)Else, Display "Not a divisor"
+9)Ask the user to check even or odd
+10)If Nth/2=0,then 
+11)Display "NTh is an even num"
+12)else,Display "Nth is odd num"
+13)End if
+14)End
+
+Q)Implement an algorithm where the user enters a number ,and an appropiate month is displayed.
+
+1)Start
+2)Ask the user to enter number
+3)Read number
+4)If Num=1,then
+5)Display "The month is January"
+6)Else if,Num=2,then
+7)Display "The month is February"
+8)Else if,Num=3,then
+9)Display "The month is March"
+10)Else if,Num=4,then
+11)Display "The month is April"
+12)Else if,Num=5,then
+13)Display "The month is May"
+14)Else if,Num=6,then
+15)Dislpay "The month is June"
+16)Else if,Num=7,then
+17)Display "The month is July"
+18)Else if,Num=8,then
+19)display "The month is August"
+20)Else if,Num=9,then
+21)Display "The month is September"
+22)Else if,Num=10
+23)Display "The month is October"
+24)Else if,Num=11
+25)Display "The month is November"
+26)Else if,Num=12,then
+27)Display "The month is December"
+28)Else, Display "The month is not available"
+29)End
+
+Q)Implement an algorithm for making a simplr calculator with all the operations (+,-,*,/,%)
+
+1)Start
+2)Ask The user to enter num1
+3)Read num1
+4)Ask the user to enter operator (=,-,*,/,%)
+5)Ask the use rto enter numn2
+6)Read num2
+7)If operator==+,then 
+8)Calculate sum=num1+num2
+9)Display sum
+10)Else if,operator==-,then
+11)Calculate difference=num1-num2
+12)Display difference
+13)Else if, operator==*,then
+14)Calculate product=num1*num2
+14)Dislpay product
+15)Else if, operator==/,then
+.If num2!=o,then
+.Calculate result=num1/num2
+.Display result
+.Else display error
+.End if
+16)Else if, opertaor==%,then
+.If num2!=0,then
+.Calculate result=num1%num2
+.Display result
+.else display error
+.End if
+17)Else, Display "The operator is invalid"
+18)End
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
