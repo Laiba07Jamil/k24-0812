@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    float d=1207,p1=118,p2=123,fuel_avg;
+    float fuel_consumed,total_fuel_consumed,total_fuel_cost;
+    printf("Enter the fuel avg in km/l\n");
+    scanf("%f",&fuel_avg); 
+    //calculate fuel consumed
+    fuel_consumed=d/fuel_avg;
+    //calculate total_fuel_consumed
+    total_fuel_consumed=fuel_consumed*2;
+    //calculate total fuel cost 
+    total_fuel_cost=(fuel_consumed*p1)+(fuel_consumed*p2);
+    if (fuel_avg>0){
+       printf("total_fuel_consumed=%f \ntotal_fuel_cost=%f\n",total_fuel_consumed,total_fuel_cost);}
+    else{
+       Printf("Invalid fuel");}
+    return 0;
+}

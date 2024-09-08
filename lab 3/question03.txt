@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int salary;
+    float tax,tax_rate;
+    printf("Enter the salary\n");
+    scanf("%d",&salary);
+    printf("Enter the tax_rate");
+    scanf("%f",&tax_rate);
+    tax=(tax_rate/100);
+    tax=tax*salary;
+    salary=salary-tax;
+    printf("Salary after tax is %d\n",salary);
+    return 0;
+}
+
+
+

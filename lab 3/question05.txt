@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    int P,T;
+    float R,simple_interest;
+    printf("Enter the principle must be between 100 Rs to 1,000,000 Rs");
+    scanf("%d",&P);
+    printf("Enter time period must be between 1 to 10 years");
+    sacnf("%d",&T);
+    printf("Enter rate of interest msut be between 5 perc to 10 perc");
+    scanf("%f",&R);
+    R=(R/100);
+    si=(P*T*R)/100;
+    printf("The simple interest is %f\n",si); 
+    return 0;
+}
+
+
+

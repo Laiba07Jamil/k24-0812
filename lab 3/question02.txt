@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int var_1,var_2;
+    printf("Enter the var_1\n");
+    scanf("%d",&var_1);
+    printf("Enter the var_2\n");
+    scanf("%d",&var_2);
+    var_1=var_1+var_2;
+    var_2=var_1-var_2;
+    var_1=var_2-var_1;
+    printf("a=%d b=%d\n",a,b);
+    return 0;
+}
+
+
+
