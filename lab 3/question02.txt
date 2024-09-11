@@ -9,7 +9,7 @@ int main()
     var_1=var_1+var_2;
     var_2=var_1-var_2;
     var_1=var_2-var_1;
-    printf("a=%d b=%d\n",a,b);
+    printf("var_1=%d var_2=%d\n",var_1,var_2);
     return 0;
 }
 
