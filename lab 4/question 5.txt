@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main ()
+{ 
+   char C;
+   printf("Enetr any character from keyboard\n");
+   scanf("%c",&C);
+   if ((C>='a')&&(C<='z')) 
+   { 
+     printf("The given character is small alphabet\n");
+   }
+   else if ((C>='A')&&(C<='Z'))
+   {
+   	 printf("The given character is capital alphabet\n");
+   }
+   else if ((C>='0')&&(C<='9'))
+   {
+   	 printf("The given character id a digit\n");
+   }
+   else
+   {
+   	 printf("The given character is a special character\n");
+   }
+}

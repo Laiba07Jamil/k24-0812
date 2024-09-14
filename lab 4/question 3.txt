@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main
+{
+   int num1,num2,sum;
+   char o;
+   printf("Enter num1\n");
+   scanf("%d",&num1);
+   printf("Enter num2\n");
+   scanf("%d",&num2);
+   printf("Enter the operator +,-,*,/\n");
+   scanf(" %c",&o);
+   switch(o){
+    case '+':
+       sum=num1 + num2;
+       printf("your sum is %d",sum);
+       break;
+    case '-':
+       sum=num1 - num2;
+       printf("your sum is %d",sum);
+       break;
+    case '*':
+       sum=num1 * num2;
+       printf("your sum is %d",sum);
+       break;
+    case '/':
+       sum=num1 / num2;
+       printf("your sum is %d",sum);
+       break;
+    default:
+       printf("Invalid operator");
+    }
+}
+  

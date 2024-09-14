@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main ()
+{
+	int n;
+	printf("Enter a positive integer\n");
+	scanf("%d",&n);
+	if (n>9)
+	{
+		printf("Greater than 9\n");
+	}
+	else
+	{
+		printf("smaller than 9");
+	}
+	return 0;
+}

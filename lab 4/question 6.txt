@@ -1,0 +1,37 @@
+#include<stdio.h>
+int main()
+{
+	 float actual_amt,saved_amt,final_amt,discount=0;
+	 printf("Enter the actual amount\n"),
+	 scanf("%f",&actual_amt);
+	 if (actual_amt>=500 && actual_amt<=2000)
+	 { 
+	   discount=5;
+	 }
+	 else if (actual_amt>2000 && actual_amt<=4000)
+	 {
+	 	discount=10;	
+	    saved_amt=(actual_amt*discount)/100;
+	    final_amt=actual_amt-saved_amt;
+	 	
+	 }
+	 else if (actual_amt>4000 && actual_amt<=6000)
+	 {
+	 	discount=20;	 
+		saved_amt=(actual_amt*discount)/100;
+	    final_amt=actual_amt-saved_amt;
+	 }
+	 else if (actual_amt>6000)
+	 {
+	 	discount=35;
+	    saved_amt=(actual_amt*discount)/100;
+	    final_amt=actual_amt-saved_amt;
+	 }
+	 else 
+	 {
+	 	printf("No discount is applied\n");
+	 }
+	 printf("Actual amount is %f\n",actual_amt);
+	 printf("Saved amount is %f\n",saved_amt);
+	 printf("Final amount is %f\n",final_amt);
+}

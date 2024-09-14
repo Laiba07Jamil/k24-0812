@@ -1,0 +1,53 @@
+#include<stdio.h>
+int main ()
+{
+	float customer_ID,units_consumed,surcharge,chargeperunit;
+	float amount_charges,surcharge_amount,net_amount;
+	char name[1024];
+	printf("Enter customer ID\n");
+	scanf("%f",&customer_ID);
+	printf("Enetr customer name\n");
+	scanf("%s",name);
+	printf("Enter the units consumed\n");
+	scanf("%f",&units_consumed);
+	if (units_consumed>=1 && units_consumed<=199)
+	{
+		chargeperunit=16.20;
+		amount_charges=units_consumed*chargeperunit;
+		printf("The amount charges @Rs16.20 per unit is %.1f\n",amount_charges);
+	}
+	else if (units_consumed>=200 && units_consumed<=300)
+	{
+		chargeperunit=20.10;
+		amount_charges=units_consumed*chargeperunit;
+		printf("The amount charges @Rs20.10 per unit is %.1f\n",amount_charges);
+	}
+	else if (units_consumed>300 && units_consumed<=500)
+	{
+		chargeperunit=27.19;
+		amount_charges=units_consumed*chargeperunit;
+		printf("The amount cahrges @Rs27.19 is %.1f\n",amount_charges);
+	}
+	else if (units_consumed>=500)
+	{ 
+	    chargeperunit=35.90;
+	    amount_charges=units_consumed*chargeperunit;
+	       if (amount_charges>=18000)
+	       {
+	       	surcharge=15;
+	       	surcharge_amount=(amount_charges*surcharge)/100;
+	       	net_amount=amount_charges+surcharge_amount;
+	       	printf("The amount charges is %.1f\n",amount_charges);
+	       	printf("The surcharge amount is %.1f\n",surcharge_amount);
+	       	printf("The net amount is %.1f\n",net_amount);
+		   }
+		   else
+		   { 
+		    printf("No surchage is applied");
+		   }
+}
+	else 
+	{ 
+	    printf("Invalid units consumed");
+	}	   	   
+}
