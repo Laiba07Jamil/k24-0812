@@ -1,0 +1,104 @@
+include<stdio.h>
+int main ()
+{
+	char coffee_type,cup_size;
+	int water,sugar,mix1,mix2,milk,coffee;
+	float total_time,time1=0,time2=0,time3=0,time4=0,time5,time6;
+	printf("Enter your type of coffee <W for white B for black>\n");
+	scanf("%c",&coffee_type);
+	printf("Enter the size of coffee <D for double S for single>\n");
+	scanf(" %c",&cup_size);
+	switch(coffee_type){
+		case 'W':
+		case 'w':
+			water=15;
+			sugar=15;
+			mix1=20;
+			coffee=2;
+			milk=4;
+			mix2=20;
+			switch(cup_size){
+				case 'D':
+				case 'd':
+					time1=water+(water*0.5);
+					printf("Step 1:Put water %.2f mins\n",time1);
+					time2=sugar+(sugar*0.5);					
+					printf("Step 2:Sugar %.2f mins\n",time2);
+					time3=mix1+(mix1*0.5);
+					printf("Step 3:Mix well %.2f mins\n",time3);
+					time4=coffee+(coffee*0.5);
+					printf("Step 4:Add coffee %.2f mins\n",time4);
+					time5=milk+(milk*0.5);
+					printf("Step 5:Add milk %.2f mins\n",time5);
+					time6=mix2+(mix2*0.5);
+					printf("Step 6:Mix well %.2f mins\n",time6);
+					total_time=time1+time2+time3+time4+time5+time6;
+					printf("Your coffee will ready in %.2f mins\n",total_time);
+					break;
+					
+				case 'S':
+				case 's':
+					printf("Step 1:Put water %d mins\n",water);
+					printf("Step 2:Sugar %d mins\n",sugar);
+					printf("Step 3:Mix well %d mins\n",mix1);
+					printf("Step 4:Add coffee %d mins\n",coffee);
+					printf("Step 5:Add milk %d mins\n",milk);
+					printf("Step 6:Mix well %d mins\n",mix2);
+					total_time=water+sugar+mix1+coffee+milk+mix2;
+					printf("Your coffee will ready in %.2f mins\n",total_time);
+					break;
+				
+				default:
+					printf("Invalid Input\n");	
+			}
+		break;
+		 
+		case 'B':
+		case 'b':
+			water=20;
+			sugar=20;
+			mix1=25;
+			coffee=15;
+			milk=0;
+			mix2=25;
+			switch(cup_size){
+				case 'D':
+				case 'd':
+					time1=water+(water*0.5);
+					printf("Step 1:Put water %.2f mins\n",time1);
+					time2=sugar+(sugar*0.5);
+					printf("Step 2:Sugar %.2f mins\n",time2);
+					time3=mix1+(mix1*0.5);
+					printf("Step 3:Mix well %.2f mins\n",time3);
+					time4=coffee+(coffee*0.5);
+					printf("Step 4:Add coffee %.2f mins\n",time4);
+					time5=milk+(milk*0.5);
+					printf("Step 5:Add milk %.2f mins\n",time5);
+					time6=mix2+(mix2*0.5);
+					printf("Step 6:Mix well %.2f mins\n",time6);
+					total_time=time1+time2+time3+time4+time5+time6;
+					printf("Your coffee will ready in %.2f mins\n",total_time);
+					break;
+					
+				case 'S':
+				case 's':
+					printf("Step 1:Put water %d mins\n",water);
+					printf("Step 2:Sugar %d mins\n",sugar);
+					printf("Step 3:Mix well %d mins\n",mix1);
+					printf("Step 4:Add coffee %d mins\n",coffee);
+					printf("Step 5:Add milk %d mins\n",milk);
+					printf("Step 6:Mix well %d mins\n",mix2);
+					total_time=water+sugar+mix1+coffee+milk+mix2;
+					printf("Your coffee will ready in %.2f mins\n",total_time);
+					break;
+				
+				default:
+					printf("Invalid Input\n");
+			
+	         }
+	    break;
+	    default:
+	    	printf("Invalid input\n");
+
+	 }
+}

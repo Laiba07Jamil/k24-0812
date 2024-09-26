@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main ()
+{
+	int weekday,vacation;
+	printf("Is it a weekday? (1 for yes and 0 for No)\n");
+	scanf("%d",&weekday);
+	printf("Are you on vacation? (1 for yes and 0 for No)\n");
+	scanf("%d",&vacation);
+	if ((weekday==0)&&(vacation==0)){
+		printf("True you can sleep in\n ");
+	}
+	else if ((weekday==0)&&(vacation==1)){
+		printf("True you can sleep in\n");
+	}
+	else if ((weekday==1)&&(vacation==1)){
+		printf("True you can sleep in\n");
+	}
+	else{
+		printf("False you can not sleep in \n");
+	}
+	return 0;
+}

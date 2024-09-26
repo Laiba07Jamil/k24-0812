@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main () 
+{
+	float grade_point;
+	printf("\nEnter your grade points\n");
+	scanf("%f",&grade_point);
+	((grade_point>=0.0) && (grade_point<=0.99))?
+	printf("\nFailed semester your registration is suspended\n"):
+	((grade_point>=1.0) && (grade_point<=1.99))?
+	printf("\nyou are on probation for next semester\n"):
+	((grade_point>=2.0) && (grade_point<=2.99))?
+	printf("\nAll is Good\n"):
+	((grade_point>=3.0) && (grade_point<=3.49))?
+	printf("\nyou are in dean's list for the semester\n"):
+	((grade_point>=3.5) && (grade_point<=4.00))?
+	printf("\nYour are the highest honour for semester\n"):
+	printf("\nInvalid grade points\n");
+	return 0;
+}

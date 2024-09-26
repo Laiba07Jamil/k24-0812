@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+	int num,last_digit;
+	printf("enter the number\n");
+	scanf("%d",&num);
+	last_digit=(num%10);
+	last_digit==0?printf("Last digit is zero\n"):printf("Last digit is non-zero\n");
+	return 0;
+}
