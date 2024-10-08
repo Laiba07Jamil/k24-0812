@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+	int i, num,sum;
+	int prime = 1;
+	int a=0,b=1;
+	printf("Enter a number to check:\t");
+	scanf("%d", &num);
+	for(i = 2; i < num; i++){
+		if(num%i==0){
+			prime = 0;
+			break;
+		}
+	}
+	if (prime == 1) {
+		printf("This is a prime number\n");
+		for(i=0;i<=num;i++)
+		{
+			printf("%d \n",a);
+			sum=a+b;
+			a=b;
+			b=sum;
+			
+		}
+	}
+	else{
+		printf("This is not a prime number\n");
+	}
+}

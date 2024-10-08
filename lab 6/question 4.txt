@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main ()
+{
+	int num,i=0,sum=0,d1;
+	int original;
+	printf("Enter a number to check\n");
+	scanf("%d",&num);
+	original=num;
+    do
+	{
+		d1=num%10;
+		sum=sum+(d1*d1*d1);
+		num=num/10;
+		i++;
+	 }
+	 while(num!=0);
+	 if(original==sum)
+	 { printf("Armstrong number\n");
+	  } 
+	  else{
+	  	printf("Not a armstrong number\n");
+	  }
+	  return 0;
+}
