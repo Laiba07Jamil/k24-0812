@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main ()
+{
+	char arr[100];
+	int j,count=0,count1=0,count2=0,count3=0,count4=0;
+	printf("Enter a string:");
+    scanf("%[^\n]", arr);
+	for(j=0;j<100;j++)
+	{
+		if(arr[j]=='a'){
+		count++;}
+		else if(arr[j]=='e')
+		{
+		count1++;}
+		else if(arr[j]=='i')
+		{
+		count2++;}
+		else if(arr[j]=='o')
+		{
+		count3++;}
+		else if(arr[j]=='u')
+		{
+		count4++;}
+
+	}
+	printf("a=%d e=%d i=%d o=%d u=%d\n",count,count1,count2,count3,count4);
+	return 0;
+}

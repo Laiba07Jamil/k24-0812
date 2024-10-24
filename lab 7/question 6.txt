@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main ()
+{
+    int arr[10];
+    int freq[100]={0};
+    int i;
+    printf("Enter the number between 0 and 99:\n");
+    for(i=0;i<10;i++)
+    {
+        scanf("%d",&arr[i]);
+        freq[arr[i]]++;
+    }
+    for(i=0;i<99;i++)
+    {
+        if(freq[i]>0)
+        {
+            printf("%d:%d times\n",i,freq[i]);
+        }
+    }
+}
