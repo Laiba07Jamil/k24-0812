@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main ()
+{
+	int start,end;
+	int i,j;
+	printf("Enter the start of the range:");
+	scanf("%d",&start);
+	printf("Enter the ending of the range:");
+	scanf("%d",&end);
+	for(i=start;i<=end;i++)
+	{
+		int isprime=1;
+		if(i>1){
+		for(j=2;j*j<=i;j++)
+		{
+		     if(i%j==0){
+		     	isprime=0;
+		     	break;
+			 }		
+		}
+		if(isprime)
+		{
+			printf("%d ",i);
+		}
+	}
+}
+}
