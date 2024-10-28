@@ -1,0 +1,40 @@
+#include<stdio.h>
+int main ()
+{
+	int n;
+	printf("Enter n:");
+	scanf("%d",&n);
+	if(n<0){
+		return 0;
+	}
+	else{
+		for(int i=0;i<n;i++)
+		{
+			for(int j=0;j<n-i;j++)
+			{
+				printf(" ");
+			}
+			for(int j=0;j<=i;j++)
+			{
+				int nfac=1;
+				for(int k=2;k<=i;k++)
+				{
+					nfac *= k;
+				}
+				int rfac=1;
+				for(int k=2;k<=j;k++)
+				{
+					rfac *= k;
+				}
+				int nrfac=1;
+				for(int k=2;k<=i-j;k++)
+				{
+					nrfac *= k;
+				}
+				int ncr=nfac/(rfac*nrfac);
+				printf("%d ",ncr);
+			}
+			printf("\n");
+		}
+	}
+}
