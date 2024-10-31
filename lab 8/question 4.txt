@@ -1,0 +1,98 @@
+#include<stdio.h>
+int main ()
+{
+	int arr1[3][3];
+	//Input elements of matrix 1
+	for(int i=0;i<3;i++)
+	{
+		for(int j=0;j<3;j++)
+		{
+			scanf("%d",&arr1[i][j]);
+		}
+	}
+	//Input elements of matrix 2
+	int arr2[3][3];
+	for(int i=0;i<3;i++)
+	{
+		for(int j=0;j<3;j++)
+		{
+			scanf("%d",&arr2[i][j]);
+		}
+	}
+	printf("\n");
+	//printing elements of matrix 1
+	printf("Matrix 1\n");
+	for(int i=0;i<3;i++)
+	{
+		for(int j=0;j<3;j++)
+		{
+			printf("%d ",arr1[i][j]);
+		}
+		printf("\n");
+	}
+	printf("\n");
+	//printing elements of matrix 2
+	printf("Matrix 2\n");
+	for(int i=0;i<3;i++)
+	{
+		for(int j=0;j<3;j++)
+		{
+			printf("%d ",arr2[i][j]);
+		}
+		printf("\n");
+	}
+	
+	//Multiplication
+	int product[3][3];
+	for(int i=0;i<3;i++)
+	{
+		for(int j=0;j<3;j++)
+		{
+			product[i][j]=arr1[i][j]*arr2[i][j];
+		}
+	}
+	printf("\n");
+	//printing product matrix
+	printf("Multiplied matrix\n");
+	for(int i=0;i<3;i++)
+	{
+		for(int j=0;j<3;j++)
+		{
+			printf("%d ",product[i][j]);
+		}
+		printf("\n");
+	}
+	printf("\n");
+	//printing elements of matrix 1
+	printf("Matrix 1\n");
+	for(int i=0;i<3;i++)
+	{
+		for(int j=0;j<3;j++)
+		{
+			printf("%d ",arr1[i][j]);
+		}
+		printf("\n");
+	}
+	
+	//Subtraction
+	int subtract[3][3];
+	for(int i=0;i<3;i++)
+	{
+		for(int j=0;j<3;j++)
+		{
+			subtract[i][j]=arr1[i][j]-product[i][j];
+		}
+	}
+	printf("\n");
+	//printing subtracted matrix
+	printf("Subtracted matrix\n");
+	for(int i=0;i<3;i++)
+	{
+		for(int j=0;j<3;j++)
+		{
+		
+			printf("%d ",subtract[i][j]);
+		}
+		printf("\n");
+	}
+}
