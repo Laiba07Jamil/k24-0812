@@ -1,0 +1,50 @@
+#include <stdio.h>
+
+int main() {
+    int arr[3][3];
+    int i,j;
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            printf("Enter [%d][%d]:",i,j);
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            printf("%d ",arr[i][j]);
+        }
+        printf("\n");
+    }
+    int issaddlepoint;
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            issaddlepoint=1;
+            for(int k=0;k<3;k++)
+            {
+                if(arr[i][j] > arr[i][k])
+                issaddlepoint=0;
+                break;
+            }
+            if (issaddlepoint) {
+                for (int k = 0; k < 3; k++) {
+                    if (arr[i][j] < arr[k][j]) {
+                        issaddlepoint = 0;
+                        break;
+                    }
+                }
+            }
+            if (issaddlepoint) {
+                printf("Saddle Point: %d at position (%d, %d)\n", arr[i][j], i, j);
+            }
+        }
+    }
+
+    return 0;
+}
