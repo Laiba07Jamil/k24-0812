@@ -1,0 +1,46 @@
+#include<stdio.h>
+#include<limits.h>
+void maximum(int arr[], int n);
+void minimum(int arr[], int n);
+int main()
+{
+	int n;
+	int i;
+	printf("Enter the size of array:");
+	scanf("%d",&n);
+	int arr[n];
+	for (i = 0 ; i < n ; i++)
+	{
+		printf("Enter element %d:",i+1);
+		scanf("%d",&arr[i]);
+	}
+	maximum(arr,n);
+	minimum(arr,n);
+	return 0;
+}
+
+void maximum(int arr[], int n)
+{
+	int i;
+	int max=INT_MIN;   //Using limits.h library to initialize lowest minimum value
+	for(i = 0; i < n; i++)
+	{
+		if( arr[i] > max)
+		{
+			max = arr[i];
+		}
+	}
+	printf("maximum=%d\n",max);
+}
+
+void minimum(int arr[] , int n)
+{
+	int i;
+	int min=INT_MAX;     //Using limits.h library to initialize lowest maximum value
+	for(i = 0; i < n ; i++)
+	{
+		if( arr[i] < min)
+		min=arr[i];
+	}
+	printf("minimum=%d\n",min);
+}
